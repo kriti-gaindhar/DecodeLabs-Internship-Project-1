@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1: Static Webpage Design</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .blueprint-grid {
+            background-image: radial-gradient(#e5e7eb 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+<!-- header -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-sm border-b border-gray-200">
+        <nav class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="font-bold text-xl tracking-tight text-blue-600">DECODELABS</div>
+            <ul class="hidden md:flex space-x-8 font-bold text-sm text-gray-600">
+                  <li><a href="d.html" class="hover:text-blue-600 transition">Home</a></li>
+                  <li><a href="about.html" class="hover:text-blue-600 transition">About</a></li>
+                <li><a href="service.html" class="hover:text-blue-600 transition">Services</a></li>
+                <li><a href="contact.html" class="bg-blue-600 text-white px-5 py-2 rounded-full hover:bg-blue-700 transition">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="py-20 md:py-32 px-6 blueprint-grid">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="text-5xl md:text-7xl font-bold mb-6 tracking-tight text-gray-900">
+                    Foundations of Visual Architecture
+                </h1>
+                <p class="text-xl text-gray-600 mb-10 max-w-2xl mx-auto">
+                    Built with technical integrity and design precision. Transforming complex requirements into seamless digital experiences.
+                </p>
+                <button class="bg-gray-900 text-white px-10 py-4 rounded-lg font-semibold hover:bg-black transition-all transform hover:scale-105">
+                   <a href="technical.html">View Technical Specifications</a> 
+                </button>
+            </div>
+        </section>
+
+        <section class="max-w-7xl mx-auto px-6 py-16">
+            <h2 class="text-sm font-bold uppercase tracking-widest text-gray-600 mb-12">Core Implementation Modules</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Grid Item 1 -->
+                <div class="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl transition-shadow">
+                    <div class="w-full h-48 bg-gray-100 rounded-xl mb-6"></div>
+                    <h3 class="text-xl font-bold mb-3">Structural Integrity</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Defining the core layout constraints and ensuring responsive behavior across all viewport breakpoints.</p>
+                </div>
+                <!-- Grid Item 2 -->
+                <div class="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl transition-shadow">
+                    <div class="w-full h-48 bg-gray-100 rounded-xl mb-6"></div>
+                    <h3 class="text-xl font-bold mb-3">Visual Hierarchy</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Prioritizing content delivery through deliberate typography scaling and spatial relationships.</p>
+                </div>
+                <!-- Grid Item 3 -->
+                <div class="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl transition-shadow">
+                    <div class="w-full h-48 bg-gray-100 rounded-xl mb-6"></div>
+                    <h3 class="text-xl font-bold mb-3">System Logic</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Backend-to-frontend translation, ensuring data flow matches visual requirements precisely.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer -->
+
+    <footer class="bg-gray-900 text-gray-400 py-16">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12">
+            <div class="col-span-1 md:col-span-2">
+                <h4 class="text-white font-bold text-lg mb-4">Internal Engineering Track</h4>
+                <p class="text-sm leading-relaxed max-w-sm">Phase I: Static Webpage Design. Establishing the baseline for future industrial training kits and complex system integrations.</p>
+            </div>
+            <div>
+                <h5 class="text-white font-semibold mb-4">Resources</h5>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#" class="hover:text-blue-400">Documentation</a></li>
+                    <li><a href="#" class="hover:text-blue-400">Design Systems</a></li>
+                    <li><a href="#" class="hover:text-blue-400">Grid Specs</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="text-white font-semibold mb-4" ><a href="contact.html">Contact</a></h5>
+                <ul class="space-y-2 text-sm">
+                    <li>engineering@decodelabs.io</li>
+                    <li>Building 1, Suite 400</li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-6 mt-12 pt-8 border-t border-gray-800 text-xs text-gray-600 text-center md:text-left">
+            &copy; 2026 DecodeLabs. All rights reserved. Industrial Training Kit P1.
+        </div>
+    </footer>
+
+</body>
+</html>
